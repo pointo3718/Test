@@ -5,14 +5,14 @@ import java.net.URL;
 public class Main {
 
     public static void main(String[] args) {
-        String clientId = "YOUR_CLIENT_ID";             // Application Client ID";
-        String clientSecret = "YOUR_CLIENT_SECRET";     // Application Client Secret";
+        String clientId = "YOUR_CLIENT_ID";             // Application Client ID"; *
+        String clientSecret = "YOUR_CLIENT_SECRET";     // Application Client Secret"; *
 
         try {
-            String imgFile = "음성 파일 경로";
+            String imgFile = "./voice.mp3"; // 음성 파일 경로 *
             File voiceFile = new File(imgFile);
 
-            String language = "Kor";        // 언어 코드 ( Kor )
+            String language = "Kor";        // 언어 코드 ( Kor ) *
             String apiURL = "https://naveropenapi.apigw-pub.fin-ntruss.com/recog/v1/stt?lang=" + language;
             URL url = new URL(apiURL);
 
