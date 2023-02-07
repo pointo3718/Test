@@ -14,7 +14,7 @@ public class Main {
             File voiceFile = new File(imgFile);
 
             String language = "Kor";        // 언어 코드 ( Kor, Jpn, Eng, Chn ) 4개의 언어 지원 *
-            String apiURL = "https://naveropenapi.apigw-pub.fin-ntruss.com/recog/v1/stt?lang=" + language;
+            String apiURL = "https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=" + language; 
             URL url = new URL(apiURL);
 
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
