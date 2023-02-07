@@ -4,15 +4,16 @@ import java.net.URL;
 
 public class Main {
 
+    // 주석 *표시 해당 본인에 맞게 수정해서 사용 할 것 
     public static void main(String[] args) {
-        String clientId = "YOUR_CLIENT_ID";             // Application Client ID"; *
-        String clientSecret = "YOUR_CLIENT_SECRET";     // Application Client Secret"; *
+        String clientId = "YOUR_CLIENT_ID";             // NCP Application Client ID"; *
+        String clientSecret = "YOUR_CLIENT_SECRET";     // NCP Application Client Secret"; *
 
         try {
             String imgFile = "./voice.mp3"; // 음성 파일 경로 *
             File voiceFile = new File(imgFile);
 
-            String language = "Kor";        // 언어 코드 ( Kor ) *
+            String language = "Kor";        // 언어 코드 ( Kor, Jpn, Eng, Chn ) 4개의 언어 지원 *
             String apiURL = "https://naveropenapi.apigw-pub.fin-ntruss.com/recog/v1/stt?lang=" + language;
             URL url = new URL(apiURL);
 
